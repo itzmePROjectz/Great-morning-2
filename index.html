@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning MRK🤘🏻</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') center center fixed; /* Replace with your background image */
+    background-size: cover;
+    color: black;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-text {
+    text-align: center;
+    animation: shining 2s infinite; /* Shining effect for 2 seconds, repeat infinitely */
+}
+
+#sub-text {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: pop-up 1s forwards; /* Popping up effect for 1 second */
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes shining {
+    0% {
+        color: black;
+    }
+    50% {
+        color: #ffcc00; /* Change to your preferred shining color halfway through the animation */
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes pop-up {
+    0% {
+        transform: scale(0); /* Start with scale 0 (invisible) */
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); /* End with scale 1 (normal size) */
+        opacity: 1;
+    }
+}</style></head>
+<body>
+    <div id="main-text">
+        <h1>Good morning MRK🤘🏻</h1>
+        <button onclick="showSubtext()">Click here</button>
+    </div>
+    <div id="sub-text" class="hidden">
+        <p>Keep your consistency ♻️ and sharpen your Determination 🔥</p>
+    </div>
+    <script src="script.js"></script>
+
+<script type="text/javascript" id="dcoder_script">function showSubtext() {
+    const subText = document.getElementById("sub-text");
+    subText.classList.toggle("hidden"); // Toggle the "hidden" class
+}</script></body></html>
